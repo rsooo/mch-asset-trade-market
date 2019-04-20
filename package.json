@@ -6,8 +6,8 @@
     "type": "git"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "socket.io": "*"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

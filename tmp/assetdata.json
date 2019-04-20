@@ -1,0 +1,23 @@
+{
+  "address": "0x11111",
+  "assets" : [
+    {
+      "id": 111,
+      "name": "OdaNobunaga",
+      "url": "xxxxxxxxxxx",
+      "selected": true
+    },
+    {
+      "id": 112,
+      "name": "OdaNobunaga2",
+      "url": "xxxxxxxxxxx",
+      "selected": false
+    },
+    {
+      "id": 112,
+      "name": "OdaNobunaga2",
+      "url": "xxxxxxxxxxx",
+      "selected": false
+    }
+  ]
+}
