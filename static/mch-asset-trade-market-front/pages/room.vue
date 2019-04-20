@@ -2,7 +2,7 @@
   <div>
     <h1 class="title">交換所</h1>
     <section class="section-content">
-      <div class="">
+      <div id="me">
       自分: 0x111111111111111
         <b-table :data="data" >
           <template slot-scope="props">
@@ -23,7 +23,7 @@
         </b-table>
       </div>
 
-      <div class="">
+      <div id="opponent">
       相手: 0x22222222222222
         <b-table :data="data" >
           <template slot-scope="props">
@@ -135,5 +135,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.section-content {
+  display: flex;
+}
+.section-content > div{
+  padding: 2em;
+}
+</style>
 
