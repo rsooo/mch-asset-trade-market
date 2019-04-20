@@ -43,7 +43,24 @@
          </template>
         </b-table>
       </div>
-     </section>
+
+      <div class="">
+      チャット
+        <b-table :data="message" >
+          <template slot-scope="props">
+            <b-table-column field="id" label="id" width="40" numeric>
+               {{props.index}}
+            </b-table-column>
+            <b-table-column field="name" label="名前" width="100">
+               {{props.name}} 
+            </b-table-column>
+            <b-table-column field="text" label="選択" width="400">
+              {{props.text}}
+            </b-table-column>
+         </template>
+        </b-table>
+      </div>
+      </section>
   </div>
 </template>
 
