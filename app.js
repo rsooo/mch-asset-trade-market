@@ -58,6 +58,7 @@ io.sockets.on('connection', function (socket) {
    * メンバーを追加　
    */
   socket.on('add:member', function(data) {
+    console.log("add:member")
     socket.data = data;
     socket.join(data.room);
     io.sockets.to(socket.data.room).emit('insert:message', socket.data.message);
@@ -69,7 +70,7 @@ io.sockets.on('connection', function (socket) {
   socket.on('insert:message', function (data) {
     console.log(data)
     console.log(socket.data)
-    io.sockets.to(socket.data.room).emit('insert:message', data.message);
+    io.sockets.to(socket.data.room).emit('insert:message', data);
   });
 
 });

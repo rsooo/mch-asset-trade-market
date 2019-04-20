@@ -17,7 +17,7 @@
          </template>
         </b-table>
         <div>
-          <b-button type="is-success" @click="clickMe">新規作成</b-button>
+          <b-button type="is-success" @click="createRoom">新規作成</b-button>
         </div>
       </div>
     </section>
@@ -54,8 +54,8 @@ export default {
     this.data = res.data  
   },
   methods: {
-    showAnalysisDetail(analysisData) {
-//      this.$router.push('analysis')
+    createRoom() {
+      this.$router.push('room')
     }
   }
 }
